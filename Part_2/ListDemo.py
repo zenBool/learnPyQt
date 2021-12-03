@@ -13,8 +13,10 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(500, 400)
+
         self.verticalLayout = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout.setObjectName("verticalLayout")
+
         self.label = QtWidgets.QLabel(Form)
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -22,6 +24,7 @@ class Ui_Form(object):
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
+
         self.listWidget = QtWidgets.QListWidget(Form)
         font = QtGui.QFont()
         font.setPointSize(14)
